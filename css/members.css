@@ -1,0 +1,100 @@
+.members{
+ height: 85vh;
+ width: 100%;
+ font-family: monospace;
+ overflow-y: hidden;
+}
+.members .row .sidebar{
+ margin-bottom: 30px;
+ height: fit-content;
+ box-shadow: 0px 1px 5px 0px rgba(181,181,181,0.75);
+-webkit-box-shadow: 0px 1px 5px 0px rgba(181,181,181,0.75);
+-moz-box-shadow: 0px 1px 5px 0px rgba(181,181,181,0.75);
+}
+.members .sidebar #title{
+ margin-left: -4px;
+}
+.members .sidebar form div{
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  border: 0.5px solid rgb(212, 212, 212);
+}
+.members .sidebar form div .icon_cont{
+  height: fit-content;
+  border-color:white;
+}
+.members .sidebar form div .icon_cont i{
+ color:rgb(87, 30, 30);
+}
+.members .sidebar form div .icon_cont #userIcon,.members .sidebar form div .icon_cont #passwordIcon {
+  font-size: 25px;
+}
+.members .sidebar form div .icon_cont #emailIcon{
+  font-size: 20px;
+}
+.members .sidebar form div .icon_cont #img{
+  font-size: 22px;
+}
+.members .sidebar form #separatorText{
+  padding: 7px;
+  background-color: white;
+  margin-top: -36px;
+  position: absolute;
+}
+
+/* scrollabe member list */
+.members .row .data{
+ height: 92vh;
+ overflow-y: scroll;
+ padding-bottom: 50px;
+}
+.members .row .data .boxCont{
+ justify-content: center;
+ flex-flow: wrap;
+}
+.members .row .data::-webkit-scrollbar{
+  display: none;
+}
+.members .row .data .box{
+  height:300px;
+  width: 270px;
+  background-color: rgb(255, 255, 255);
+box-shadow: 0px 1px 5px 0px rgba(181,181,181,0.75);
+-webkit-box-shadow: 0px 1px 5px 0px rgba(181,181,181,0.75);
+-moz-box-shadow: 0px 1px 5px 0px rgba(181,181,181,0.75);
+}
+.members .row .data .box #memberImg{
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.members .row .data .box .footer{
+  margin-top: 25px;
+  font-size: 14px;
+}
+.members .row .data .box .footer .edit_cont{
+  box-shadow: 0px 1px 5px 0px rgba(181,181,181,0.75);
+-webkit-box-shadow: 0px 1px 5px 0px rgba(181,181,181,0.75);
+-moz-box-shadow: 0px 1px 5px 0px rgba(181,181,181,0.75);
+ cursor: pointer;
+}
+.members .row .data .box .footer .edit_cont:hover{
+ opacity: 0.7;
+}
+
+
+/* responsive view */
+@media(max-width:1100px){
+.members{
+ overflow-y: visible;
+}
+.members .sidebar{
+ width: 100%;
+ box-shadow: none;
+}
+.members .row .data{
+ justify-content: center;
+ }
+}

@@ -1,0 +1,73 @@
+.searchNav {
+  width: 600px;
+  position: fixed;
+  background-color: rgb(229, 228, 228);
+  box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+}
+
+.searchNav #searchbar {
+  padding: 5px;
+  padding-left: 5px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: white;
+}
+
+.searchNav #searchbar div {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.searchNav #searchbar div i {
+  font-size: 18px;
+}
+
+.searchNav #searchbar div input {
+  width: 100%;
+  padding-left: 25px;
+  color: black; /* Set text color to black */
+  border-color: white;
+  border-left: 1px solid rgb(221, 221, 221);
+  background-color: white; /* Ensure background is white */
+}
+
+.searchNav #searchbar div input:focus {
+  color: black; /* Text remains black when focused */
+  outline: none; /* Optional: Remove default focus outline */
+}
+
+@media (max-width: 1450px) {
+  .searchNav #searchbar div input {
+    padding-left: 10px;
+  }
+
+  .searchNav #searchbar #memberCount {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .members {
+    overflow-y: visible;
+  }
+
+  .members .sidebar {
+    display: none;
+  }
+
+  .members .rows .data {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .searchNav {
+    width: 90%;
+  }
+}

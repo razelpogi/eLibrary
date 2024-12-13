@@ -1,0 +1,170 @@
+.members {
+  height: 90vh;
+  width: 100%;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+.members .rows {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.members .sidebar {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: fit-content;
+  width: 30%;
+  box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+}
+
+.members .sidebar #title {
+  margin-left: -4px;
+}
+
+.members .sidebar form div {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  border: 0.5px solid rgb(185, 185, 185);
+}
+
+.members .sidebar form div .icon_cont {
+  height: fit-content;
+  border-color: white;
+}
+
+.members .sidebar form div .icon_cont i {
+  color: rgb(121, 121, 121);
+}
+
+.members .sidebar form div .icon_cont #userIcon, .members .sidebar form div .icon_cont #passwordIcon {
+  font-size: 25px;
+}
+
+.members .sidebar form div .icon_cont #emailIcon {
+  font-size: 20px;
+}
+
+.members .sidebar form div .icon_cont #img {
+  font-size: 22px;
+}
+
+.members .sidebar form #separatorText {
+  padding: 7px;
+  background-color: white;
+  margin-top: -36px;
+  position: absolute;
+}
+
+/* scrollabe member list */
+.members .rows .data {
+  width: 70%;
+  overflow-y: scroll;
+  padding-bottom: 50px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  transition: 0.4s linear;
+}
+
+.members .rows .data .boxCont {
+  margin-top: 80px;
+  height: fit-content;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.members .rows .data::-webkit-scrollbar {
+  display: none;
+}
+
+.members .rows .data .box {
+  height: fit-content;
+  width: 270px;
+  background-color: white;
+  box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+}
+
+.members .rows .data .box .body {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  overflow-y: hidden;
+}
+
+.members .rows .data .box .body h5 {
+  font-size: 18px;
+  letter-spacing: -0.8px;
+}
+
+.members .rows .data .box .footer {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.members .rows .data .box .bookImg {
+  margin-top: -23px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.members .rows .data .box .bookImg img {
+  width: 100%;
+}
+
+.members .rows .data .box span #value {
+  font-size: 14px;
+}
+
+.members .rows .data .edit_cont {
+  box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+  cursor: pointer;
+}
+
+.members .rows .data .edit_cont:hover {
+  opacity: 0.7;
+}
+
+.issue_btn {
+  box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(181, 181, 181, 0.75);
+  cursor: pointer;
+}
+
+.members .rows .data .issue_btn:hover {
+  opacity: 0.7;
+}
+
+/* responsive view */
+@media(max-width:1100px) {
+  .members .sidebar {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 4444;
+    height: 100vh;
+    width: 100% !important;
+    display: none;
+  }
+
+  .members {
+    overflow-y: visible;
+  }
+
+  .members .rows .data {
+    width: 100%;
+    justify-content: center;
+  }
+}
