@@ -32,7 +32,7 @@ function sendConfirmationEmail($recipientEmail, $bookTitle, $bookAuthor, $reserv
 
         // Sender and Recipient
         $mail->setFrom('camonirazel01@gmail.com', 'Library Admin'); // Sender email and name
-        $mail->addAddress('camonirazel01@gmail.com');                    // Recipient email
+        $mail->addAddress('rocellacondiman@gmail.com');                    // Recipient email
 
         // Email Content
         $mail->isHTML(true);                                   // Enable HTML content
@@ -46,7 +46,7 @@ function sendConfirmationEmail($recipientEmail, $bookTitle, $bookAuthor, $reserv
                         //  "Title: $bookTitle\n" . 
                         //  "Author: $bookAuthor\n" . 
                          "Reservation Date: $reservationDate\n\n" . 
-                         "Thank you for using our library system!\nLibrary Team";
+                         "Thank you for using our library system!";
 
         // Send the email
         $mail->send();

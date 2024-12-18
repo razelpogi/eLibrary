@@ -183,11 +183,11 @@
         } else if (data === "found") {
           alert("Selected book already reserved !!")
         } else {
-          alert("500!!.  Failed to reserved book !!");
+          alert("Failed to reserved book !!");
         }
       },
       error: function() {
-        alert("404!!. Client side error !!")
+        alert("Client side error !!")
       }
     })
   }
