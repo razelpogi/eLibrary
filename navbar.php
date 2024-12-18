@@ -33,6 +33,7 @@
    <hr />
    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
    <a href="index.php"> <i class="fa fa-home" aria-hidden="true"></i> Dashboard</a>
+   <a href="loginout.php" class="d-<?php echo $visible; ?>"> <i class="fa fa-users" aria-hidden="true"></i> Login/out</a>
    <a href="members.php" class="d-<?php echo $visible; ?>"> <i class="fa fa-users" aria-hidden="true"></i> Members</a>
    <a href="users.php" class="d-<?php echo $visible; ?>"> <i class="fa fa-users" aria-hidden="true"></i> Users</a>
    <a href="books.php"> <i class="fa fa-book" aria-hidden="true"></i> Books</a>
@@ -71,3 +72,4 @@
  <!-- if (json_decode($_COOKIE["user_data"])[3] === "admin") {
 
    <i class="fa fa-plus" data-bs-toggle="tooltip" data-bs-placement="top" title="Add a new book" onclick="createBook()" draggable="false"></i> -->
+   
