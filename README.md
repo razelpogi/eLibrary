@@ -99,34 +99,6 @@ Follow these instructions to install and configure eLibrary on your local server
 ### Search Interface
 ![Search Interface]()
 
----
-
-## Contribution Guidelines
-
-We welcome contributions to eLibrary! Here’s how you can help:
-
-1. **Fork the Repository**: Create your own copy of the project.
-2. **Create a Feature Branch**: Work on your changes in a new branch.
-   ```bash
-   git checkout -b feature-name
-   ```
-3. **Commit Changes**: Write meaningful commit messages.
-   ```bash
-   git commit -m "Describe the feature or fix"
-   ```
-4. **Push to GitHub**:
-   ```bash
-   git push origin feature-name
-   ```
-5. **Submit a Pull Request**: We’ll review your changes for integration.
-
----
-
-## License
-
-This project is licensed under the MIT License. Please see the `LICENSE` file for details.
-
----
 
 ## Contact
 
