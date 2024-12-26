@@ -92,7 +92,7 @@ Follow these instructions to install and configure eLibrary on your local server
 ![Home Page]()
 
 ### Admin Dashboard
-![Admin Dashboard](file:///C:/xampp1/htdocs/eLibrary/img/Screenshot%202024-12-18%20205508.png)
+![Admin Dashboard](img/Screenshot%202024-12-18%20205508.png)
 
 ### Search Interface
 ![Search Interface]()
