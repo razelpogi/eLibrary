@@ -2,7 +2,7 @@
 
 eLibrary is a web-based digital library management system created to streamline the process of organizing, searching, and borrowing books and other resources. Designed for schools, organizations, and individual users, eLibrary provides an efficient and user-friendly platform for managing libraries.
 
-![eLibrary Banner](https://via.placeholder.com/800x300?)
+![eLibrary Banner]()
 
 
 
